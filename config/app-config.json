@@ -1,0 +1,99 @@
+{
+  "apiBase": "",
+  "apiBaseEu": "",
+  "projects": [
+    {
+      "slug": "majestic",
+      "name": "Majestic RP",
+      "tagline": "GTA V · города США",
+      "initials": "MJ",
+      "accent": "#f93a64",
+      "forumOrigin": "https://forum.majestic-rp.ru",
+      "forumSections": [
+        "/forums/general-server-rules/",
+        "/forums/rules-of-criminal-organizations/",
+        "/forums/rules-of-state-organizations/"
+      ],
+      "serverCategory": "Дополнительные серверные правила",
+      "serverNameRe": "^[A-Za-z .'-]+$",
+      "fallbackServers": [
+        { "slug": "new-york", "id": "636", "name": "New York" },
+        { "slug": "detroit", "id": "637", "name": "Detroit" },
+        { "slug": "chicago", "id": "638", "name": "Chicago" },
+        { "slug": "los-angeles", "id": "648", "name": "Los Angeles" },
+        { "slug": "miami", "id": "772", "name": "Miami" },
+        { "slug": "las-vegas", "id": "868", "name": "Las Vegas" },
+        { "slug": "washington", "id": "881", "name": "Washington" },
+        { "slug": "dallas", "id": "1003", "name": "Dallas" }
+      ],
+      "pinnedRules": ["1.1", "1.4", "1.6"],
+      "nickAlphabet": "latin",
+      "lawsNeedLogin": true,
+      "sharedKnowledge": true,
+      "onlineUrl": "https://api.majestic-files.net/meta/servers?project=majestic&region=ru&isTest=false"
+    },
+    {
+      "slug": "russia",
+      "name": "Россия Онлайн",
+      "tagline": "GTA V · Москва",
+      "initials": "РО",
+      "accent": "#ea403d",
+      "forumOrigin": "https://forum.russia.online",
+      "forumSections": [
+        "/forums/general-server-rules/",
+        "/forums/rules-of-criminal-organizations/",
+        "/forums/rules-of-state-organizations/"
+      ],
+      "serverCategory": "Дополнительные серверные правила",
+      "serverNameRe": "^[А-ЯЁа-яё .'-]+$",
+      "fallbackServers": [
+        { "slug": "downtown", "id": "14", "name": "Downtown" },
+        { "slug": "eclipse", "id": "556", "name": "Eclipse" },
+        { "slug": "rockford", "id": "883", "name": "Rockford" },
+        { "slug": "redwood", "id": "1421", "name": "Redwood" },
+        { "slug": "murrieta", "id": "1689", "name": "Murrieta" },
+        { "slug": "chiliad", "id": "2094", "name": "Chiliad" }
+      ],
+      "pinnedRules": ["1.3", "7.8"],
+      "nickAlphabet": "cyrillic",
+      "lawsNeedLogin": true,
+      "sharedKnowledge": true
+    },
+    {
+      "slug": "gta5rp",
+      "name": "GTA5RP",
+      "tagline": "GTA V · Лос-Сантос",
+      "initials": "G5",
+      "accent": "#ff8600",
+      "forumOrigin": "https://forum.gta5rp.com",
+      "forumSections": [
+        "/forums/general-server-rules/",
+        "/forums/rules-of-criminal-organizations/",
+        "/forums/rules-of-state-organizations/"
+      ],
+      "serverCategory": "Игровые сервера",
+      "serverNameRe": "^[A-Za-z .'-]+$",
+      "serverNamePrefix": "^Сервер\\s+",
+      "serverForumPrefix": "server-",
+      "serverRulesNode": "^(?:Правила сервера|Дополнительные правила сервера)",
+      "forumPaceMs": 3000,
+      "lawsNode": "^(?:Законодательная база|Законодательство)$",
+      "forumLoginExternal": true,
+      "fallbackServers": [
+        { "slug": "downtown", "id": "14", "name": "Downtown" },
+        { "slug": "eclipse", "id": "556", "name": "Eclipse" },
+        { "slug": "rockford", "id": "883", "name": "Rockford" },
+        { "slug": "redwood", "id": "1421", "name": "Redwood" },
+        { "slug": "murrieta", "id": "1689", "name": "Murrieta" },
+        { "slug": "chiliad", "id": "2094", "name": "Chiliad" },
+        { "slug": "mirror", "id": "2163", "name": "Mirror" },
+        { "slug": "blaine", "id": "2225", "name": "Blaine" }
+      ],
+      "pinnedRules": ["1.1"],
+      "nickAlphabet": "latin",
+      "lawsNeedLogin": true,
+      "sharedKnowledge": false,
+      "onlineViaServer": true
+    }
+  ]
+}
