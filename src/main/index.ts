@@ -1,6 +1,7 @@
 import { app, globalShortcut, BrowserWindow } from 'electron'
 import fs from 'node:fs'
 import path from 'node:path'
+import { initLog } from './log'
 import { loadAppConfig } from './config'
 import { loadSettings, applySystemSettings } from './settings'
 import { createBackend } from './backend/live'
@@ -10,14 +11,8 @@ import { togglePanel, openAiWindow } from './windows'
 const appRoot = path.join(__dirname, '../..')
 app.setAppUserModelId('ru.tverskoy.helper')
 
-let logFile = ''
+const log = initLog()
 let backendInstance: ReturnType<typeof createBackend> | null = null
-
-function log(msg: string): void {
-  const line = `[${new Date().toISOString()}] ${msg}`
-  // В dev печатаем в консоль; в проде лог пишется в userData (фаза 8 — файловые логи)
-  console.log(line)
-}
 
 const gotLock = app.requestSingleInstanceLock()
 if (!gotLock) {
@@ -129,4 +124,4 @@ if (isSmoke) {
   })
 }
 
-export { logFile, backendInstance, appRoot }
+export { log, backendInstance, appRoot }
